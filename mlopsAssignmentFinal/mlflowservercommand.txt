@@ -1,0 +1,6 @@
+mlflow server --backend-store-uri='sqlite:////home/mlopsAssignment/Airflow/Dags/Lead_scoring_data_pipeline/database//lead_scoring_model_experimentation.db' --default-artifact-root="./mlruns" --port=6006 --host=0.0.0.0
+
+import shutil
+
+# Create a zip file of the folder `mlopsAssignment`
+shutil.make_archive("mlopsAssignmentFinal", 'zip', "mlopsAssignment")
